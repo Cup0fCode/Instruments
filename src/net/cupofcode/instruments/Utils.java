@@ -79,4 +79,9 @@ public class Utils {
 		return ChatColor.RESET + newKey;
 	}
 
+	public static void playInstrument(InstrumentType instrumentType, Player player) {
+		if(instrumentType == null) return;
+
+		new Instrument(instrumentType, player).play();
+	}
 }
