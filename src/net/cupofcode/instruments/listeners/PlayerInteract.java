@@ -89,6 +89,10 @@ public class PlayerInteract implements Listener {
 
         if(instrumentType == null) return;
 
+        if (instance.getConfig().getBoolean("settings.instruments.permissions")
+                && !p.hasPermission("instruments.use"))
+            return;
+
         if(this.isUsingHoe(event)) event.setCancelled(true);
 
         new Instrument(instrumentType, p).play();

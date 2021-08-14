@@ -54,7 +54,7 @@ public class Instruments extends JavaPlugin {
 
 		this.registerListeners(new InventoryClick(), new InventoryClose(), new PlayerInteract(),
 				new PlayerDrop(), new PlayerPickup(), new PlayerJoin(), new PlayerDeath(),
-                new PlayerQuit(), new BlockBreak(), new PlayerAttack(), new PlayerItemHeld(), new PlayerRespawn(), new InventoryOpen(), new PlayerSwapItem(), new PlayerEntityInteract());
+                new PlayerQuit(), new BlockBreak(), new PlayerAttack(), new PlayerItemHeld(), new PlayerRespawn(), new InventoryOpen(), new PlayerSwapItem(), new PlayerEntityInteract(), new ItemCraft());
 
 		if (config.getBoolean("settings.instruments.recipe.enabled"))
 			this.addBukkitRecipes();

@@ -1,6 +1,6 @@
 main: net.cupofcode.instruments.Instruments
 name: Instruments
-version: '1.7'
+version: '1.8'
 description: Adds various net.cupofcode.instruments to your server
 author: CupOfCode
 api-version: 1.14
