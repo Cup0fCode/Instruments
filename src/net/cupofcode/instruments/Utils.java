@@ -54,13 +54,13 @@ public class Utils {
 		int position = getIndexOfNote(note);
 
 		return new String[] { notes[position], notes[(position + 4) % notes.length],
-				notes[(position + 8) % notes.length] };
+				notes[(position + 7) % notes.length] };
 	}
 
 	public static String[] getMinorTriad(String note) {
 		int position = getIndexOfNote(note);
 
-		return new String[] { notes[position], notes[(position + 4) % notes.length],
+		return new String[] { notes[position], notes[(position + 3) % notes.length],
 				notes[(position + 7) % notes.length] };
 	}
 
