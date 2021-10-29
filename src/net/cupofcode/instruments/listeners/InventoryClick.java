@@ -64,7 +64,7 @@ public class InventoryClick implements Listener {
 
 				if (useChords) {
 					if (e.getClick().equals(ClickType.SHIFT_LEFT) || e.getClick().equals(ClickType.SHIFT_RIGHT)) {
-						boolean minor = e.getClick().equals(ClickType.SHIFT_LEFT) ? true : false;
+						boolean minor = e.getClick().equals(ClickType.SHIFT_LEFT) ? false : true;
 						String[] notes = minor ? Utils.getMinorTriad(note) : Utils.getMajorTriad(note);
 						for (String pNote : notes) {
 							instrument.playNote(pNote, octave);
